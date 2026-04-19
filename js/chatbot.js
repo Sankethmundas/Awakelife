@@ -160,6 +160,30 @@ class AwakeBot {
     setTimeout(() => {
       this.addBotMessage(CHATBOT_DATA.welcome.text, CHATBOT_DATA.welcome.quickReplies);
     }, 1000);
+    // Start proactive check
+    this.initProactiveTrigger();
+  }
+
+  initProactiveTrigger() {
+    // If on a service page, wait 30 seconds then show a proactive message
+    const isServicePage = window.location.pathname.includes('/services/');
+    if (isServicePage) {
+      setTimeout(() => {
+        if (!this.isOpen && !this.proactiveTriggered) {
+          this.triggerProactiveMessage();
+        }
+      }, 30000); // 30 seconds
+    }
+  }
+
+  triggerProactiveMessage() {
+    this.proactiveTriggered = true;
+    const serviceName = document.title.split('—')[0].trim();
+    const proactiveText = `I noticed you're exploring **${serviceName}**. 🌟 It's one of our most transformative programs! Would you like to know how it can help you reach your specific goals?`;
+    
+    // Open the widget and send the message
+    this.toggle(); 
+    this.addBotMessage(proactiveText, ["Learn More", "Book a Session", "Talk to Nivedita"]);
   }
 
   renderWidget() {
