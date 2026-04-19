@@ -1,0 +1,9 @@
+{
+  "name": "awakelife-coaching",
+  "version": "1.0.0",
+  "description": "AwakeLife Coaching — Transform from within. Live with purpose.",
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000"
+  }
+}

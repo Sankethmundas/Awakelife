@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="Aj7Dfn4vfgCkbMyumvRKb8ypjXWbzyunGuBIoFv1fg4" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AwakeLife Coaching — Transform from Within. Live with Purpose.</title>
+  <meta name="description" content="AwakeLife Coaching by Nivedita Hakkapakki. Personal transformation, mindset coaching, career guidance, and relationship coaching to help you live your fullest life.">
+  <meta name="keywords" content="Life Coaching, Coaching Programs, Nivedita Hakkapakki, Relationship Coaching, Mindset Coaching, Career Guidance, Personal Transformation, Mental Health">
+  <meta name="author" content="Nivedita Hakkapakki">
+  
+  <!-- Open Graph / Social Media Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://awakelife-coaching.vercel.app">
+  <meta property="og:title" content="AwakeLife Coaching — Transform from Within. Live with Purpose.">
+  <meta property="og:description" content="AwakeLife Coaching by Nivedita Hakkapakki. Personal transformation, mindset coaching, career guidance, and relationship coaching to help you live your fullest life.">
+  <meta property="og:image" content="https://awakelife-coaching.vercel.app/favicon.ico">
+  <meta property="og:site_name" content="AwakeLife Coaching">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+  
+  <!-- SEO Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "AwakeLife Coaching",
+    "image": "https://awakelife-coaching.vercel.app/favicon.ico",
+    "@id": "https://awakelife-coaching.vercel.app/",
+    "url": "https://awakelife-coaching.vercel.app/",
+    "telephone": "+918805366800",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Nivedita Hakkapakki"
+    },
+    "description": "Personal transformation, mindset coaching, career guidance, and relationship coaching."
+  }
+  </script>
+</head>
+<body>
+  <!-- Loader -->
+  <div class="page-loader"><div class="loader-spinner"></div></div>
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">✦ Personal Transformation Coaching</div>
+        <h1>Transform from <span class="text-gradient">Within.</span><br>Live with <span class="text-gradient">Purpose.</span></h1>
+        <p>Guided by Nivedita Hakkapakki — empowering individuals to break free from limiting patterns, discover their authentic selves, and design a life aligned with their deepest values.</p>
+        <div class="hero-buttons">
+          <a href="https://forms.gle/z2wxpkzXE4HTXMaQ8" target="_blank"" class="btn btn-primary btn-lg">Book a Free Discovery Call</a>
+          <a href="#services" class="btn btn-outline btn-lg">Explore Programs ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="stats-grid animate-on-scroll">
+        <div class="stat-item">
+          <div class="stat-number" id="lives-stat" data-count="500" data-suffix="+">0</div>
+          <div class="stat-label">Lives Transformed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="6">0</div>
+          <div class="stat-label">Coaching Programs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="sessions-stat" data-count="2000" data-suffix="+">0</div>
+          <div class="stat-label">Sessions Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="98" data-suffix="%">0</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Automatically increment stats based on elapsed time to simulate real-time growth
+      document.addEventListener("DOMContentLoaded", function() {
+        const launchDate = new Date('2024-01-01').getTime();
+        const now = new Date().getTime();
+        const daysElapsed = Math.floor((now - launchDate) / (1000 * 60 * 60 * 24));
+        
+        // Simulating 1 new life transformed every 7 days and 1 session every 2 days
+        const addedLives = Math.floor(daysElapsed / 7);
+        const addedSessions = Math.floor(daysElapsed / 2);
+        
+        const livesEl = document.getElementById('lives-stat');
+        const sessionsEl = document.getElementById('sessions-stat');
+        
+        if (livesEl) livesEl.setAttribute('data-count', 500 + addedLives);
+        if (sessionsEl) sessionsEl.setAttribute('data-count', 2000 + addedSessions);
+      });
+    </script>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <div class="section-subtitle">Our Coaching Programs</div>
+        <h2>Six Pillars of <span class="text-gradient">Transformation</span></h2>
+        <p class="section-desc">Each program is carefully designed to address a core dimension of personal growth, creating lasting change from the inside out.</p>
+      </div>
+      <div class="services-grid">
+        <div class="card service-card animate-on-scroll">
+          <div class="card-icon">🔄</div>
+          <h3 class="card-title">Identity & Habit Transformation</h3>
+          <p class="card-text">Reshape your identity at the core. Discover keystone habits, design your environment, and build a 90-day identity habit plan for lasting change.</p>
+          <a href="/services/identity-habit" class="card-link">Explore Program →</a>
+        </div>
+        <div class="card service-card animate-on-scroll">
+          <div class="card-icon">🧠</div>
+          <h3 class="card-title">Mindset & Emotional Resilience</h3>
+          <p class="card-text">Build an unshakable growth mindset. Master failure reframing, emotional triggers, and develop resilience micro-habits for any challenge.</p>
+          <a href="/services/mindset-resilience" class="card-link">Explore Program →</a>
+        </div>
+        <div class="card service-card animate-on-scroll">
+          <div class="card-icon">🎯</div>
+          <h3 class="card-title">Life Alignment & Purposeful Living</h3>
+          <p class="card-text">Discover your true values and align every area of life with them. Craft your personal mission statement and live with unwavering intention.</p>
+          <a href="/services/life-alignment" class="card-link">Explore Program →</a>
+        </div>
+        <div class="card service-card animate-on-scroll">
+          <div class="card-icon">🧘</div>
+          <h3 class="card-title">Inner Awareness & Personal Presence</h3>
+          <p class="card-text">Cultivate deep inner stillness and authentic presence. Learn to observe your mind, let go of ego patterns, and communicate consciously.</p>
+          <a href="/services/inner-awareness" class="card-link">Explore Program →</a>
+        </div>
+        <div class="card service-card animate-on-scroll">
+          <div class="card-icon">💼</div>
+          <h3 class="card-title">Career Coaching</h3>
+          <p class="card-text">Gain clarity on your career purpose. From personal branding and interview mastery to leadership development and strategic career transitions.</p>
+          <a href="/services/career-coaching" class="card-link">Explore Program →</a>
+        </div>
+        <div class="card service-card animate-on-scroll">
+          <div class="card-icon">❤️</div>
+          <h3 class="card-title">Relationship Coaching</h3>
+          <p class="card-text">For individuals and couples ready to repair, rediscover, or deepen their relationships. Build trust, resolve conflicts, and reconnect with love.</p>
+          <a href="/services/relationship-coaching" class="card-link">Explore Program →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Snippet -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="about-grid animate-on-scroll">
+        <div>
+          <div class="section-subtitle">Meet Your Coach</div>
+          <h2>Nivedita <span class="text-gradient">Hakkapakki</span></h2>
+          <p style="font-size:1.1rem;">With a deep passion for personal transformation and years of experience in life coaching, Nivedita guides individuals through profound journeys of self-discovery and growth.</p>
+          <p>Her approach blends ancient wisdom with modern psychology, creating a unique coaching experience that addresses the whole person — mind, body, and spirit. Every session is a safe space to explore, grow, and transform.</p>
+          <div style="margin-top:24px; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+            <a href="/about" class="btn btn-outline">Learn More About Nivedita →</a>
+            <div class="footer-social" style="display:flex; gap:12px;">
+              <a href="https://www.instagram.com/niveditahakkapakki?igsh=M21lcG9ocTFjeTNy" target="_blank" aria-label="Instagram">IG</a>
+              <a href="https://www.linkedin.com/in/nivedita-hakkapakki-88595460" target="_blank" aria-label="LinkedIn">IN</a>
+            </div>
+          </div>
+        </div>
+        <div class="about-image" style="background: linear-gradient(135deg, rgba(108,99,255,0.2), rgba(255,107,157,0.2)); display:flex; align-items:center; justify-content:center; font-size:6rem;">
+          ✦
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <div class="section-subtitle">Client Stories</div>
+        <h2>Transformations That <span class="text-gradient">Inspire</span></h2>
+        <p class="section-desc">Real stories from real people who've experienced the power of intentional coaching.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">Working with Nivedita completely changed my relationship with myself. The identity-first approach helped me shed years of limiting beliefs. I went from feeling stuck to launching my own business in 6 months!</div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <div class="testimonial-name">Ananya Deshmukh</div>
+              <div class="testimonial-role">Entrepreneur, Pune</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">The career coaching program was a game-changer. Nivedita helped me identify my strengths, rebrand myself, and negotiate a 40% salary increase. Her structured approach is brilliant.</div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div>
+              <div class="testimonial-name">Rahul Menon</div>
+              <div class="testimonial-role">Product Manager, Bangalore</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-text">My husband and I were on the brink of separation. The relationship coaching sessions gave us tools to communicate, rebuild trust, and fall in love again. We're stronger than ever. Forever grateful.</div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">P</div>
+            <div>
+              <div class="testimonial-name">Priya & Vikram Joshi</div>
+              <div class="testimonial-role">Couple, Mumbai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:48px">
+        <a href="/testimonials" class="btn btn-outline">Read More Stories →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <div class="section-subtitle">How It Works</div>
+        <h2>Your Journey in <span class="text-gradient">4 Steps</span></h2>
+      </div>
+      <div class="process-steps animate-on-scroll">
+        <div class="process-step">
+          <div class="process-step-num">1</div>
+          <h4>Discovery Call</h4>
+          <p class="card-text">A free 30-minute call to understand your goals, challenges, and vision for transformation.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">2</div>
+          <h4>Personal Roadmap</h4>
+          <p class="card-text">We create a customized coaching plan aligned with your unique needs and timeline.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">3</div>
+          <h4>Deep Work Sessions</h4>
+          <p class="card-text">Weekly 60-90 min sessions combining exercises, reflection, and actionable strategies.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">4</div>
+          <h4>Lasting Transformation</h4>
+          <p class="card-text">Integrate new habits, mindsets, and tools into your daily life for sustainable growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Booking Section -->
+  <section class="section" id="booking">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <div class="section-subtitle">Ready to Begin?</div>
+        <h2>Start Your <span class="text-gradient">Transformation</span> Today</h2>
+        <p class="section-desc">Book your free discovery session and take the first step towards the life you deserve.</p>
+      </div>
+      <div class="pricing-grid animate-on-scroll" style="margin-top:40px; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:24px; max-width:1100px; margin-left:auto; margin-right:auto;">
+        <!-- Single Session -->
+        <div class="card service-card" style="text-align:center; display:flex; flex-direction:column;">
+          <h3 style="margin-bottom:16px">1:1 Session</h3>
+          <h2 style="color:var(--primary); margin-bottom:8px; font-size:2rem;">₹2,000</h2>
+          <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:24px;">per session (Starting price)</p>
+          <div style="flex-grow:1"></div>
+          <a href="https://forms.gle/z2wxpkzXE4HTXMaQ8" target="_blank" class="btn btn-outline" style="width:100%; justify-content:center;">Book Now</a>
+        </div>
+        <!-- 1 Month Package -->
+        <div class="card service-card" style="text-align:center; display:flex; flex-direction:column;">
+          <h3 style="margin-bottom:16px">1 Month Focus</h3>
+          <h2 style="color:var(--primary); margin-bottom:8px; font-size:2rem;">₹15,000</h2>
+          <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:24px;">Includes 4-5 sessions</p>
+          <div style="flex-grow:1"></div>
+          <a href="https://forms.gle/z2wxpkzXE4HTXMaQ8" target="_blank" class="btn btn-outline" style="width:100%; justify-content:center;">Book Now</a>
+        </div>
+        <!-- Starter -->
+        <div class="card service-card" style="text-align:center; display:flex; flex-direction:column;">
+          <h3 style="margin-bottom:16px">Starter</h3>
+          <h2 style="color:var(--primary); margin-bottom:24px; font-size:2rem;">₹30,000</h2>
+          <div style="flex-grow:1"></div>
+          <a href="https://forms.gle/z2wxpkzXE4HTXMaQ8" target="_blank" class="btn btn-outline" style="width:100%; justify-content:center;">Book Now</a>
+        </div>
+        <!-- Standard -->
+        <div class="card service-card" style="text-align:center; display:flex; flex-direction:column;">
+          <h3 style="margin-bottom:16px">Standard</h3>
+          <h2 style="color:var(--primary); margin-bottom:24px; font-size:2rem;">₹55,000</h2>
+          <div style="flex-grow:1"></div>
+          <a href="https://forms.gle/z2wxpkzXE4HTXMaQ8" target="_blank" class="btn btn-outline" style="width:100%; justify-content:center;">Book Now</a>
+        </div>
+        <!-- Premium -->
+        <div class="card service-card" style="text-align:center; border:2px solid var(--primary); display:flex; flex-direction:column; position:relative; overflow:visible;">
+          <div style="position:absolute; top:-16px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg, var(--primary), var(--secondary)); color:white; padding:4px 16px; border-radius:20px; font-size:0.8rem; font-weight:600; white-space:nowrap;">RECOMMENDED</div>
+          <h3 style="margin-bottom:16px; margin-top:12px;">Premium</h3>
+          <h2 style="color:var(--primary); margin-bottom:24px; font-size:2rem;">₹80,000</h2>
+          <div style="flex-grow:1"></div>
+          <a href="https://forms.gle/z2wxpkzXE4HTXMaQ8" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center;">Book Now</a>
+        </div>
+        <!-- Premium+Support -->
+        <div class="card service-card" style="text-align:center; display:flex; flex-direction:column;">
+          <h3 style="margin-bottom:16px">Premium<br>+ Support</h3>
+          <h2 style="color:var(--primary); margin-bottom:24px; font-size:2rem;">₹1,20,000</h2>
+          <div style="flex-grow:1"></div>
+          <a href="https://forms.gle/z2wxpkzXE4HTXMaQ8" target="_blank" class="btn btn-outline" style="width:100%; justify-content:center;">Book Now</a>
+        </div>
+      </div>
+      
+      <div class="text-center animate-on-scroll" style="margin-top:48px;">
+        <h3 style="margin-bottom:16px">Ready to start your journey?</h3>
+        <p class="section-desc" style="max-width:600px; margin:0 auto 32px auto;">Skip the wait time by filling out our comprehensive intake questionnaire directly. Nivedita will review your submission and get back to you shortly.</p>
+        <a href="https://forms.gle/z2wxpkzXE4HTXMaQ8" target="_blank" class="btn btn-primary btn-lg" style="justify-content:center;">Complete the Discovery Form ✦</a>
+      </div>
+
+      <div class="contact-grid animate-on-scroll" style="max-width:900px; margin:48px auto 0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));">
+        <div>
+          <div class="contact-info-card">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h4 style="margin-bottom:4px">Email</h4>
+              <p style="margin:0"><a href="mailto:nivedita.hakkapakki@gmail.com">nivedita.hakkapakki@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">📱</div>
+            <div>
+              <h4 style="margin-bottom:4px">Phone</h4>
+              <p style="margin:0"><a href="tel:+918805366800">+91 8805366800</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <h4 style="margin-bottom:4px">Sessions</h4>
+              <p style="margin:0">Online via Zoom & In-person</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">⏰</div>
+            <div>
+              <h4 style="margin-bottom:4px">Response Time</h4>
+              <p style="margin:0">Within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section section-dark">
+    <div class="container text-center animate-on-scroll">
+      <div class="section-subtitle">Stay Inspired</div>
+      <h2>Join the <span class="text-gradient">AwakeLife</span> Community</h2>
+      <p class="section-desc">Get weekly insights on personal growth, mindset shifts, and transformation tips delivered to your inbox.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn btn-primary">Subscribe ✦</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Chatbot -->
+  <div id="chatbot"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/chatbot.js"></script>
+  <script type="module" src="/js/forms.js"></script>
+</body>
+</html>
