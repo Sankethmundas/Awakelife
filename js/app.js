@@ -25,7 +25,7 @@ function renderNavbar() {
           <a href="/services/identity-habit" class="${isActive('/services')}">Services</a>
           <a href="/testimonials" class="${isActive('/testimonials')}">Testimonials</a>
           <a href="/resources" class="${isActive('/resources')}">Resources</a>
-          <a href="https://forms.gle/z2wxpkzXE4HTXMaQ8" target="_blank"" class="btn btn-primary btn-sm">Book a Session</a>
+          <a href="https://neartail.com/sm/LdZu1Y_Gw" target="_blank"" class="btn btn-primary btn-sm">Book a Session</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>

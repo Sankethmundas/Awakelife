@@ -39,11 +39,11 @@ const CHATBOT_DATA = {
       quickReplies: ["Book This Service", "Other Services", "Learn More"]
     },
     "book a session": {
-      text: "Wonderful! 🎉 Please use our dedicated intake form to book your session: [Book Your Session Here](https://forms.gle/z2wxpkzXE4HTXMaQ8)",
+      text: "Wonderful! 🎉 Please use our dedicated intake form to book your session: [Book Your Session Here](https://neartail.com/sm/LdZu1Y_Gw)",
       quickReplies: ["FAQs", "Explore Services"]
     },
     "book this service": {
-      text: "Great choice! Please use our dedicated intake form to secure your spot: [Book Your Session Here](https://forms.gle/z2wxpkzXE4HTXMaQ8)",
+      text: "Great choice! Please use our dedicated intake form to secure your spot: [Book Your Session Here](https://neartail.com/sm/LdZu1Y_Gw)",
       quickReplies: ["FAQs", "Other Services"]
     },
     "talk to nivedita": {
@@ -77,7 +77,7 @@ const CHATBOT_DATA = {
       quickReplies: ["Book Free Session", "More FAQs", "Explore Services"]
     },
     "book free session": {
-      text: "Let's get you booked for a free discovery call! Please fill out our brief intake form here: [Book Discovery Call](https://forms.gle/z2wxpkzXE4HTXMaQ8)",
+      text: "Let's get you booked for a free discovery call! Please fill out our brief intake form here: [Book Discovery Call](https://neartail.com/sm/LdZu1Y_Gw)",
       quickReplies: ["FAQs", "Explore Services"]
     },
     "group sessions?": {
