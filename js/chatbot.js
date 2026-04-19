@@ -298,9 +298,18 @@ class AwakeBot {
       this.addBotMessage(intent.text, intent.quickReplies || []);
       if (intent.expectInput) this.expectInput = intent.expectInput;
       if (intent.action) {
-        const [action, value] = intent.action.split(':');
+        const firstColon = intent.action.indexOf(':');
+        const action = intent.action.substring(0, firstColon);
+        const value = intent.action.substring(firstColon + 1);
+        
         if (action === 'redirect') {
-          setTimeout(() => window.location.href = value, 1500);
+          setTimeout(() => {
+            if (value.startsWith('http')) {
+              window.open(value, '_blank');
+            } else {
+              window.location.href = value;
+            }
+          }, 1500);
         }
       }
       return;
